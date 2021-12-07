@@ -45,6 +45,7 @@ def encodeMessage(message: str, image, result: str) -> None:
     out_img = Image.fromarray(pixels)
     out_img.save(result)
     out_img.close()
+    print('Message encoded into your image')
 
 
 
@@ -68,7 +69,6 @@ def main():
     if (text == '1'):
         message = '''noooo co ty nie powiesz'''
         encodeMessage(message, 'me.png', 'encoded-me.png')
-        print('Message encoded')
         decodeMessage('encoded-me.png')
         
     if (text == '2'):

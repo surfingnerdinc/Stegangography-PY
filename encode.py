@@ -1,5 +1,4 @@
 from main import encodeMessage
-message = '''Heheheszki jakies tam nie wiem jakie'''
+message = '''Some message to encode into your image'''
 encodeMessage(message, 'me.png', 'encoded-me.png')
-print('Message encoded')
     
